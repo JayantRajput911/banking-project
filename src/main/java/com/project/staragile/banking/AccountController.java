@@ -45,6 +45,7 @@ public class AccountController {
 	public Account getAccountDetails(@PathVariable(value="accountNumber") int accountNumber) {
 		System.out.println(accountNumber);
 		Account account = accountService.getAccountDetails(accountNumber);
+		System.out.println("post called");
 		return account;
 	}
 
